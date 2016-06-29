@@ -1,0 +1,22 @@
+{
+  "name": "meteormap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandlerbasso/meteorlanding.git"
+  },
+  "author": "Chandler Basso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chandlerbasso/meteorlanding/issues"
+  },
+  "homepage": "https://github.com/chandlerbasso/meteorlanding#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
