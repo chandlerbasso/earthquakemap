@@ -1,7 +1,10 @@
 {
-  "name": "meteormap",
+  "name": "quakemap",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "6.2.0"
+  },
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
