@@ -22,10 +22,10 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'))
 
 app.use(session({
-  saveUninitalized: true,
-  resave: true,
+  // saveUninitalized: true,
+  // resave: true,
   secret: 'danerysisjohnsaunt',
-  cookie: {maxAge: 6000000000}
+  cookie: {maxAge: 60000}
 }))
 
 app.use('/map', mapRoute)
