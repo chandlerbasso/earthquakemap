@@ -1,13 +1,14 @@
 // const maps       = require('../models/map')
 const router       = require('express').Router();
-// const jsonParser      = bodyParser.json()
-//create application/
-// const urlencodedParser= bodyParser.urlencoded({ extended:false})
+const key          = process.env.MAPKEY_API
+const { createUser, loginUser } = require('../models/model');
+
 
 router.get('/', function(req,res){
-  res.render('maps.ejs')
-
+  res.render('maps.ejs',{user: req.session.user})
 
 })
-
+router.get('/key', function(req,res){
+  res.send(key)
+  })
 module.exports = router

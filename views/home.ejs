@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="../style.css">
-<div class = 'header'>
-<a href="user/login">login</a> <a href='user/signup' > Sign Up</a>
 <body>
-
- <% if(user){%>
-   <h1>  Welcome, <%= user.fname %> <%= user.lname%></h1>
+<div class = 'container-fluid'>
 
 
-     <%} else {%>
-
- <h1>    Welcome, Guest </h1>
-     <% } %>
+ <h1>Welcome to QuakeHub</h1>
 </div>
+<div class="container">
+<div class = 'row'>
+  <div class="col-xs-">
+  <h4 class = "intro">Have you ever wandered where earthquakes are most frequent? Well now its Easy to know!</h4>
+  </div>
+
+</div>
+<div class="contain">
+<div class = 'login'>
+     <h1 class = "login">Login</h1>
+  <form action="/user/login" method="post">
+
+   <p class = 'email'> <input type="text" name="email" placeholder="Email"></p><br>
+
+   <p class = 'pword'> <input type="password" name="password" placeholder="Password"></p><br>
+    <input type="Submit" value="login">
+    </form>
+    <p>Dont have an account? <a href='user/signup' >Sign up Here</a></p>
+    </div>
+</div>
+</div>
+</div>
+</body>
 </body>
 </html>

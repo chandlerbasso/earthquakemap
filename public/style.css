@@ -1,12 +1,15 @@
-.header {
-  background-image: url('./images/background.jpg');
-  /*background-color: blue;*/
-  width: 100%;
-  height: 400px;
+.container-fluid {
+  /*background-image: url('./images/background.jpg');*/
+  background-color: silver;
+  /*width: 100%;*/
+  /*height: 400px;*/
    /*border: 3px solid #73AD21;*/
    background-repeat: no-repeat;
-   background-size: 100% 60%;
+   /*background-size: 100% 60%;*/
    text-align: center;
+}
+h4.intro{
+  text-align: center;
 }
 a{
   text-align: center;
@@ -14,3 +17,59 @@ a{
 h1 {
   text-align: center;
 }
+.contain{
+  margin: 50px auto;
+  width: 640px;
+}
+div.login{
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  align-content: inherit;
+  text-align: center;
+  border: 3px solid grey;
+  padding: 2px;
+}
+p.email{
+  margin-bottom: -3px;
+}
+p.pword {
+  margin-bottom: 0px;
+}
+h1.login{
+  font-weight: bold;
+  background: #f3f3f3;
+  border-bottom: 2px solid grey;
+  margin-top: 0px;
+}
+
+#map {
+width: 70%;
+height: 400px;
+margin: 0px auto;
+}
+.logout {
+  display: block;
+  margin: 0px auto;
+
+}
+
+h2.signup{
+  font-weight: bold;
+  background: #f3f3f3;
+  border-bottom: 2px solid grey;
+  margin-top: 0px;
+}
+div.signup{
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  align-content: inherit;
+  text-align: center;
+  border: 3px solid grey;
+  padding: 2px;
+  margin-top: 100px;
+}
+

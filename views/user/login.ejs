@@ -4,15 +4,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-      <% if(user){%>
+<div class='container-fluid'>
 <nav>
+      <% if(user){%>
     <form method="post" action="/user/logout?_method=DELETE">
      <input type="submit" value="Logout">
+<a href="user/login">login</a> <a href='user/signup' > Sign Up</a>
+     </nav>
       <%}else{%>
-  <h1>Welcome</h1>
+     <h1>Login</h1>
+</div>
   <form action="/user/login" method="post">
     <label for="">Email</label>
     <input type="text" name="email"><br>

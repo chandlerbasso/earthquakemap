@@ -4,25 +4,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-   <% if(user){%>
 
-    <form method="post" action="/user/logout?_method=DELETE">
-     <input type="submit" value="Logout">
-      <%}else{%>
-  <form action="/user/signup" method='post'>
-    <label for="">First Name:</label>
-    <input type="text" name='fname'><br>
-    <label for="">last Name:</label>
-    <input type="text" name='lname'><br>
-    <label for="">Email:</label>
-    <input type="text" name='email'><br>
-    <label for="">Password:</label>
-    <input type="password" name='password'><br>
+
+
+<div class="signup">
+<h2 class="signup">Sign Up</h2>
+  <form action="/user/signup" method='post' >
+
+    <input type="text" name='fname' placeholder="First Name"><br>
+
+    <input type="text" name='lname' placeholder="Last Name"><br>
+    <input type="text" name='email' placeholder="Email"><br>
+
+    <input type="password" name='password' placeholder="Password"><br>
     <input type="Submit" value="Create New User">
   </form>
-   <%}%>
+</div>
 </body>
 </html>
