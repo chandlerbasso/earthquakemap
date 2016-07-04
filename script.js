@@ -25,7 +25,7 @@ app.use(session({
   saveUninitalized: true,
   resave: true,
   secret: 'danerysisjohnsaunt',
-  cookie: {maxAge: 6000000}
+  cookie: {maxAge: 6000000000}
 }))
 
 app.use('/map', mapRoute)
@@ -37,3 +37,4 @@ app.use('/user', userRoute)
 app.listen(port, function(){
   console.log('you\'re running on port ' + port);
 })
+server.timeout = 100000000;
