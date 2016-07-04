@@ -14,8 +14,8 @@ $.ajax({
 
 
 
+// google maps api has great documentation https://developers.google.com/maps/documentation/javascript/tutorial#HTML5
 
-// google.maps.event.addDomListener(window, 'load', initialize);
 var map;
 
 function initMap() {
@@ -28,15 +28,14 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'),
       mapOptions);
 
-  // Create a <script> tag and set the USGS URL as the source.
+//throws the usgs api onto the page
   var script = document.createElement('script');
-
   script.src = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
   document.getElementsByTagName('head')[0].appendChild(script);
 
 var infoWindow = new google.maps.InfoWindow({map: map});
 
-        // Try HTML5 geolocation.
+        //might not work on other browsers
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -55,10 +54,10 @@ var infoWindow = new google.maps.InfoWindow({map: map});
       icon: getCircle(magnitude)
     };
   });
-
+//this doesnt work
 map.data.addListener('click', function(feature){
 
-// console.log(counter)
+
 map.data.setStyle(function(feature){
 let magnitude = feature.getProperty('mag');
 console.log('clicked')
@@ -68,6 +67,7 @@ console.log('clicked')
 })
 })
 }
+//might not be needed
 function getCircle2(magnitude) {
   var circle = {
     path: google.maps.SymbolPath.CIRCLE,
@@ -90,6 +90,7 @@ function getCircle(magnitude) {
   };
   return circle;
 }
+//adds the usgs results onto the page
 function eqfeed_callback(results) {
   map.data.addGeoJson(results);
 }
