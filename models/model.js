@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const dbConnection = 'mongodb://localhost:27017/quake_login';
+const dbConnection = 'mongodb://heroku_xkn5bmhl:p34q710onu3tkn3slcj0qqru7b@ds011725.mlab.com:11725/heroku_xkn5bmhl';
 const bcrypt = require('bcrypt');
 const salt = bcrypt.genSalt(10);
 
