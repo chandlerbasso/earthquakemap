@@ -1,6 +1,6 @@
 // const maps       = require('../models/map')
 const router       = require('express').Router();
-const key          = process.env.MAPKEY_API
+const key          = process.env.key
 const { createUser, loginUser } = require('../models/model');
 
 
