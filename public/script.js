@@ -30,7 +30,7 @@ function initMap() {
 
 //throws the usgs api onto the page
   var script = document.createElement('script');
-  script.src = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
+  script.src = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
   document.getElementsByTagName('head')[0].appendChild(script);
 
 var infoWindow = new google.maps.InfoWindow({map: map});
